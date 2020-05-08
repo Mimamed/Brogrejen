@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="Bro grejen:jar" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="af790c65-9d68-427f-b38b-ec681bf7cd06" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\Bodi\IdeaProjects\Bro grejen\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1baF6MeKKapRataEd2ViK18P6Dw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RunManager">
+    <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MainClass" />
+      <module name="Bro grejen" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainClass" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="af790c65-9d68-427f-b38b-ec681bf7cd06" name="Default Changelist" comment="" />
+      <created>1588862120085</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1588862120085</updated>
+    </task>
+    <task id="LOCAL−00001" summary="tata">
+      <created>1588926729379</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1588926729379</updated>
+    </task>
+    <task id="LOCAL−00002" summary="tata">
+      <created>1588928666390</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1588928666390</updated>
+    </task>
+    <task id="LOCAL−00003" summary="tata">
+      <created>1588929392590</created>
+      <option name="number" value="LOCAL−00003" />
+      <option name="presentableId" value="LOCAL−00003" />
+      <updated>1588929392590</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="tata" />
+    <option name="LAST_COMMIT_MESSAGE" value="tata" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="838" y="227" key="#Project_Structure" timestamp="1588867383600">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="838" y="227" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1588867383600" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1588870145906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1588870145906" />
+    <state x="711" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1588889729022">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="711" y="371" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1588889729022" />
+    <state x="614" y="114" key="CommitChangelistDialog2" timestamp="1588929392184">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1588929392184" />
+    <state x="761" y="329" key="FileChooserDialogImpl" timestamp="1588889751352">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="761" y="329" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1588889751352" />
+    <state width="1921" height="286" key="GridCell.Tab.0.bottom" timestamp="1588892038864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="286" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1588892038864" />
+    <state width="1921" height="286" key="GridCell.Tab.0.center" timestamp="1588892038864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="286" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1588892038864" />
+    <state width="1921" height="286" key="GridCell.Tab.0.left" timestamp="1588892038864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="286" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1588892038864" />
+    <state width="1921" height="286" key="GridCell.Tab.0.right" timestamp="1588892038864">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1921" height="286" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1588892038864" />
+    <state x="461" y="162" key="SettingsEditor" timestamp="1588889763692">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="162" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1588889763692" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1588930547767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1588930547767" />
+  </component>
+</project>
