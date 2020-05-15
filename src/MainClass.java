@@ -15,8 +15,8 @@ public class MainClass //σ
     static JFrame win = new JFrame();
     static JPanel pan = new JPanel();
     static JButton uppdatera = new JButton("Beräkna");
-    static JTextField längdB = new JTextField(), längdC = new JTextField(), spänningJ = new JTextField(), längdF = new JTextField(), vikt = new JTextField(), spänningH = new JTextField(), spänningG = new JTextField();
-    static JLabel g = new JLabel("g:"), h = new JLabel("h:"), j = new JLabel("j:"), titelB = new JLabel("Längd B"), titelC = new JLabel("Längd C"), titelJ = new JLabel("σ för J"), titelF = new JLabel("Längd F"), titelVikt = new JLabel("Vikt"), felmedelande = new JLabel(), titelH = new JLabel("σ för H"), titelG = new JLabel("σ för G"), radieJ = new JLabel("Radie för J: "), radieH = new JLabel("Radie för H: "), höjdG = new JLabel("stjocklek för G: ");
+    static JTextField längdB = new JTextField(), längdC = new JTextField(), spänningJ = new JTextField(), längdF = new JTextField(), vikt = new JTextField(), spänningH = new JTextField(), spänningG = new JTextField(), broDensitet = new JTextField();
+    static JLabel g = new JLabel("g:"), h = new JLabel("h:"), j = new JLabel("j:"), titelB = new JLabel("Längd B"), titelC = new JLabel("Längd C"), titelJ = new JLabel("σ för J"), titelF = new JLabel("Längd F"), titelVikt = new JLabel("Vikt"), felmedelande = new JLabel(), titelH = new JLabel("σ för H"), titelG = new JLabel("σ för G"), radieJ = new JLabel("Radie för J: "), radieH = new JLabel("Radie för H: "), höjdG = new JLabel("stjocklek för G: "), titelBroDensitet = new JLabel("<html>Broens<br/>densitet</html>");
     static double längdD;
 
     public static void main (String[] args)
@@ -45,6 +45,7 @@ public class MainClass //σ
         pan.add(g);
         pan.add(h);
         pan.add(j);
+        pan.add(broDensitet);
         pan.add(titelB);
         pan.add(titelC);
         pan.add(titelJ);
@@ -52,16 +53,18 @@ public class MainClass //σ
         pan.add(titelH);
         pan.add(titelG);
         pan.add(titelVikt);
+        pan.add(titelBroDensitet);
         pan.add(radieH);
         pan.add(radieJ);
         pan.add(höjdG);
         längdB.setBounds(10,100,50,20);
-        längdC.setBounds(80, 100, 50, 20);
-        längdF.setBounds(150, 100, 50, 20);
-        vikt.setBounds(220, 100, 50, 20);
-        spänningJ.setBounds(290, 100, 50, 20);
-        spänningH.setBounds(360, 100, 50, 20);
-        spänningG.setBounds(430, 100, 50, 20);
+        längdC.setBounds(70, 100, 50, 20);
+        längdF.setBounds(130, 100, 50, 20);
+        vikt.setBounds(190, 100, 50, 20);
+        spänningJ.setBounds(250, 100, 50, 20);
+        spänningH.setBounds(310, 100, 50, 20);
+        spänningG.setBounds(370, 100, 50, 20);
+        broDensitet.setBounds(430, 100, 50, 20);
         titelB.setBounds(längdB.getX(), 50, 50, 50);
         titelC.setBounds(längdC.getX(), 50, 50, 50);
         titelJ.setBounds(spänningJ.getX(), 50, 50, 50);
@@ -69,6 +72,7 @@ public class MainClass //σ
         titelH.setBounds(spänningH.getX(), 50, 50, 50);
         titelF.setBounds(längdF.getX(), 50, 50, 50);
         titelVikt.setBounds(vikt.getX(), 50, 50, 50);
+        titelBroDensitet.setBounds(broDensitet.getX(), 50, 50, 50);
         g.setBounds(längdB.getX(), 130, 200, 50);
         h.setBounds(längdB.getX(), 160, 200, 50);
         j.setBounds(längdB.getX(), 190, 200, 50);
@@ -89,6 +93,7 @@ public class MainClass //σ
         längdC.setText("");
         längdB.setText("");
         vikt.setText("");
+        broDensitet.setText("");
 
     }
 
@@ -100,9 +105,26 @@ public class MainClass //σ
         {
             try
             { /*Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))*/
+                double f4 = Double.parseDouble(vikt.getText()), f1 = 0, f3 = 0, f2, höjd = 0, radienR, radienr, fG = 0;
+
+                for (int i = 0; i < 100; i++)
+                {
+                    f1 = f4 * Math.cos(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText())));
+                    f3 = (f1 * Math.sin(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))));
+                    höjd = (f3 / (Double.parseDouble(spänningG.getText()) * Double.parseDouble(längdF.getText()) * Math.pow(10, 6)));
+                    fG = höjd * Double.parseDouble(längdF.getText()) * Double.parseDouble(längdB.getText()) * Double.parseDouble(broDensitet.getText()) * 9.82 - fG;
+                    f4 = f4 + fG / 2;
+                }
+
+                f1 = f4 * 1 * Math.cos(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))); //Har med säkerhetsfaktorn
+                f3 = (f1 * Math.sin(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))));
+                höjd = (f3 / (Double.parseDouble(spänningG.getText()) * Double.parseDouble(längdF.getText()) * Math.pow(10, 6)));
+                f2 = (f1 * Math.cos(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))));
+                radienR = Math.pow((f1) / (Double.parseDouble(spänningH.getText()) * Math.PI * Math.pow(10, 6)), 0.5);
+                radienr = Math.pow((f2) / (Double.parseDouble(spänningJ.getText()) * Math.PI * Math.pow(10, 6)), 0.5);
+                        
                 längdD = Math.sqrt(Math.pow(Double.parseDouble(längdC.getText()), 2) + Math.pow(Double.parseDouble(längdB.getText()), 2));
-                double f1 = Double.parseDouble(vikt.getText()) * Math.cos(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText()))), f3 = (f1 * Math.sin(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText())))), f2 = (f1 * Math.cos(Math.toRadians(90) - Math.atan(Double.parseDouble(längdC.getText()) / Double.parseDouble(längdB.getText())))), höjd = ((f3 * 12) / (Double.parseDouble(spänningG.getText()) * Double.parseDouble(längdF.getText()) * Math.pow(10, 6))), radienR = Math.pow((f1 * 6) / (Double.parseDouble(spänningH.getText()) * Math.PI * Math.pow(10, 6)), 0.5), radienr = Math.pow((f2 *6) / (Double.parseDouble(spänningJ.getText()) * Math.PI * Math.pow(10, 6)), 0.5);
-                System.out.println("vikt: " + vikt.getText() + "  längdC: " + längdC.getText() + "   längdB: " + längdB.getText() + "   längdD: " + längdD + "   f1: " + f1);
+                System.out.println("vikt: " + f4 + "  längdC: " + längdC.getText() + "   längdB: " + längdB.getText() + "   längdD: " + längdD + "   f1: " + f1);
                 g.setText(beginingG + f3);
                 h.setText(beginingH + f1);
                 j.setText(beginingJ + f2);
